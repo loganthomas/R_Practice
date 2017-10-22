@@ -1,7 +1,9 @@
-above10<-function(x){
-  for (i in seq_along(x)){
-    if(x[i]>10){
-      print(x[i])
-    }
-  }
+above10 <- function(x){
+    #' Returns all values in a sequence or vector that are greater than 10.
+    #'
+    #' @param x Sequence or vector of numbers to determine which values exceed 10.
+    #' 
+    #' @return All values in x that exceed 10.
+    vals = x > 10
+    return(x[vals])
 }
